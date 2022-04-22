@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TesteSeparaLinha {
 	
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File("conta.csv"));
+		Scanner scanner = new Scanner(new File("conta.csv"),"UTF-8");
 		
 		while(scanner.hasNextLine()) {
 			String linha = scanner.nextLine();
